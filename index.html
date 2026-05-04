@@ -8,6 +8,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Barlow:wght@400;500;700&display=swap" rel="stylesheet">
+<!-- MailerLite Universal -->
+<script>
+(function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[]).push(arguments);},l=d.createElement(e),l.async=1,l.src=u,n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})(window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+ml('account', '2314479');
+</script>
+<!-- End MailerLite Universal -->
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{
@@ -425,13 +431,21 @@ footer{background:var(--black-mid);border-top:1px solid rgba(245,184,0,0.15);pad
       </div>
     </div>
 
-    <div class="signup-bar">
-      <h3>Drop Alerts</h3>
-      <p>Be the first to know when the gear ships.</p>
-      <form class="signup-form" onsubmit="event.preventDefault(); alert('Thanks — we\'ll be in touch when the Pack gear drops.');">
-        <input type="email" placeholder="your@email.com" required>
-        <button type="submit" class="btn-primary">Notify Me</button>
-      </form>
+    <div id="mlb2-40772740" class="signup-bar ml-form-embedContainer ml-subscribe-form ml-subscribe-form-40772740">
+      <div class="row-form">
+        <h3>Drop Alerts</h3>
+        <p>Be the first to know when the gear ships.</p>
+        <form class="signup-form ml-block-form" action="https://assets.mailerlite.com/jsonp/2314479/forms/186501681238770882/subscribe" data-code="" method="post" target="_blank">
+          <input type="email" name="fields[email]" placeholder="your@email.com" required autocomplete="email" aria-label="email">
+          <input type="hidden" name="ml-submit" value="1">
+          <input type="hidden" name="anticsrf" value="true">
+          <button type="submit" class="btn-primary">Notify Me</button>
+        </form>
+      </div>
+      <div class="row-success" style="display:none">
+        <h3>You're In The Pack.</h3>
+        <p>We'll hit you up the second Wolfpack gear drops. Run with us.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -502,7 +516,7 @@ footer{background:var(--black-mid);border-top:1px solid rgba(245,184,0,0.15);pad
     <a href="#drop">Shop</a>
     <a href="#events">Events</a>
     <a href="#">Instagram</a>
-    <a href="mailto:colinsilva86@gmail.com">Contact</a>
+    <a href="mailto:CSilva@wolfpackbilliards.com">Contact</a>
   </div>
   <div class="footer-copy">© 2026 Wolfpack Billiards LLC · DFW Born. Nationally Known.</div>
 </footer>
@@ -592,6 +606,18 @@ const SHOPIFY_TOKEN  = 'REPLACE_WITH_STOREFRONT_ACCESS_TOKEN';
   });
 })();
 </script>
+
+
+<!-- MailerLite Drop Alerts form handler -->
+<script>
+function ml_webform_success_40772740() {
+  var $ = window.ml_jQuery || window.jQuery;
+  if (!$) return;
+  $('.ml-subscribe-form-40772740 .row-success').show();
+  $('.ml-subscribe-form-40772740 .row-form').hide();
+}
+</script>
+<script src="https://groot.mailerlite.com/js/w/webforms.min.js?vb397d78ebaa8a0f631d35384c46d781b" type="text/javascript"></script>
 
 </body>
 </html>
