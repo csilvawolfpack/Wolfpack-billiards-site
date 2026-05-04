@@ -431,21 +431,26 @@ footer{background:var(--black-mid);border-top:1px solid rgba(245,184,0,0.15);pad
       </div>
     </div>
 
-    <div id="mlb2-40772740" class="signup-bar ml-form-embedContainer ml-subscribe-form ml-subscribe-form-40772740">
-      <div class="row-form">
+    <div class="signup-bar" id="drop-alerts-box">
+      <div id="drop-alerts-form-state">
         <h3>Drop Alerts</h3>
         <p>Be the first to know when the gear ships.</p>
-        <form class="signup-form ml-block-form" action="https://assets.mailerlite.com/jsonp/2314479/forms/186501681238770882/subscribe" data-code="" method="post" target="_blank">
+        <form class="signup-form"
+              action="https://assets.mailerlite.com/jsonp/2314479/forms/186501681238770882/subscribe"
+              method="post"
+              target="ml-drop-alerts-iframe"
+              onsubmit="setTimeout(function(){document.getElementById('drop-alerts-form-state').style.display='none';document.getElementById('drop-alerts-success-state').style.display='block';},700);">
           <input type="email" name="fields[email]" placeholder="your@email.com" required autocomplete="email" aria-label="email">
           <input type="hidden" name="ml-submit" value="1">
           <input type="hidden" name="anticsrf" value="true">
           <button type="submit" class="btn-primary">Notify Me</button>
         </form>
       </div>
-      <div class="row-success" style="display:none">
+      <div id="drop-alerts-success-state" style="display:none">
         <h3>You're In The Pack.</h3>
         <p>We'll hit you up the second Wolfpack gear drops. Run with us.</p>
       </div>
+      <iframe name="ml-drop-alerts-iframe" style="display:none" title="newsletter signup"></iframe>
     </div>
   </div>
 </section>
@@ -607,17 +612,6 @@ const SHOPIFY_TOKEN  = 'REPLACE_WITH_STOREFRONT_ACCESS_TOKEN';
 })();
 </script>
 
-
-<!-- MailerLite Drop Alerts form handler -->
-<script>
-function ml_webform_success_40772740() {
-  var $ = window.ml_jQuery || window.jQuery;
-  if (!$) return;
-  $('.ml-subscribe-form-40772740 .row-success').show();
-  $('.ml-subscribe-form-40772740 .row-form').hide();
-}
-</script>
-<script src="https://groot.mailerlite.com/js/w/webforms.min.js?vb397d78ebaa8a0f631d35384c46d781b" type="text/javascript"></script>
 
 </body>
 </html>
