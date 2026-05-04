@@ -183,6 +183,22 @@ section{padding:5rem 2rem}
 .event-card-large h3{font-family:'Michroma',sans-serif;font-size:1.4rem;color:var(--white);text-transform:uppercase;letter-spacing:2px;margin-bottom:0.5rem}
 .event-card-large p{color:var(--gray-light);font-size:0.95rem;margin-bottom:0.75rem;line-height:1.7}
 .events-more{text-align:center;color:var(--gray);font-style:italic;margin-top:1.5rem;font-size:0.92rem}
+.event-card-flyer{background:var(--black-card);border:1px solid rgba(245,184,0,0.15);border-top:3px solid var(--gold);margin:3rem auto 2rem;max-width:880px;display:grid;grid-template-columns:300px 1fr;gap:0;text-align:left;overflow:hidden}
+.event-card-flyer .flyer-img{background:#000;display:flex;align-items:center;justify-content:center;padding:1rem}
+.event-card-flyer .flyer-img img{max-width:100%;max-height:460px;width:auto;height:auto;display:block;box-shadow:0 4px 20px rgba(0,0,0,0.5)}
+.event-card-flyer .body{padding:2rem}
+.event-card-flyer .meta{font-family:'Michroma',sans-serif;font-size:0.7rem;color:var(--gold);text-transform:uppercase;letter-spacing:3px;margin-bottom:0.5rem}
+.event-card-flyer h3{font-family:'Michroma',sans-serif;font-size:1.3rem;color:var(--white);text-transform:uppercase;letter-spacing:2px;margin-bottom:0.5rem;line-height:1.2}
+.event-card-flyer p{color:var(--gray-light);font-size:0.95rem;margin-bottom:0.75rem;line-height:1.6}
+.event-card-flyer .stat-row{display:flex;gap:1.25rem;flex-wrap:wrap;margin:1.25rem 0;padding:1rem 0;border-top:1px solid rgba(245,184,0,0.15);border-bottom:1px solid rgba(245,184,0,0.15)}
+.event-card-flyer .stat{display:flex;flex-direction:column}
+.event-card-flyer .stat-label{font-family:'Michroma',sans-serif;font-size:0.55rem;color:var(--gold-dark);letter-spacing:2px;text-transform:uppercase;margin-bottom:0.25rem}
+.event-card-flyer .stat-val{font-family:'Michroma',sans-serif;font-size:0.85rem;color:var(--white);letter-spacing:1px}
+@media(max-width:720px){
+  .event-card-flyer{grid-template-columns:1fr}
+  .event-card-flyer .flyer-img{padding:1.5rem}
+  .event-card-flyer .flyer-img img{max-height:none;width:80%}
+}
 
 /* LEAGUES */
 .leagues{background:var(--black)}
@@ -288,6 +304,10 @@ footer{background:var(--black-mid);border-top:1px solid rgba(245,184,0,0.15);pad
       <div class="gallery-item">
         <img src="bca_world_championships.jpg" alt="BCA World Championships">
         <div class="gallery-caption">BCA World Championships</div>
+      </div>
+      <div class="gallery-item">
+        <img src="team_dinner.jpg" alt="Wolfpack Pack Family Dinner">
+        <div class="gallery-caption">Pack Family · Off The Felt</div>
       </div>
     </div>
   </div>
@@ -478,6 +498,24 @@ footer{background:var(--black-mid);border-top:1px solid rgba(245,184,0,0.15);pad
     <div class="section-label">On The Road</div>
     <h2 class="section-title">Tour Stops</h2>
     <div class="gold-divider center-divider"></div>
+
+    <div class="event-card-flyer">
+      <div class="flyer-img">
+        <img src="tx2lvpromo.jpg" alt="TX2LV Dream Team Invitational tournament flyer">
+      </div>
+      <div class="body">
+        <div class="meta">May 23–24, 2026 · Sat &amp; Sun</div>
+        <h3>TX2LV Dream Team Invitational</h3>
+        <p>An exclusive USAPL invitational bringing top talent from across Texas and Louisiana — cash, bragging rights, regional pride. Hosted by <strong>Doc's Billiards Office</strong>.</p>
+        <div class="stat-row">
+          <div class="stat"><span class="stat-label">Format</span><span class="stat-val">16-Team Mod. Single Elim.</span></div>
+          <div class="stat"><span class="stat-label">Entry</span><span class="stat-val">$500 / team</span></div>
+          <div class="stat"><span class="stat-label">Calcutta</span><span class="stat-val">Online + Side Pots</span></div>
+        </div>
+        <p style="font-size:0.88rem"><strong>Invited:</strong> Houston USAPL · Louisiana USAPL · San Antonio USAPL · Brazos County USAPL · plus 8–10 from TX2LV USA Pool Leagues</p>
+        <p style="font-style:italic;color:var(--gold-dark);margin-top:1rem">Where Texas goes 2 Las Vegas.</p>
+      </div>
+    </div>
 
     <div class="event-card-large">
       <img src="Wolfpack_TexasBarTableChampionship_Landscape.png" alt="Texas Bar Table Championship">
